@@ -1,10 +1,10 @@
 [masters]
-master.k8 ansible_user=pdclab-k8-master
+master.k8 ansible_user=pdclab
 
 [workers]
-worker1.k8 ansible_user=pdclab-k8-worker1
-worker2.k8 ansible_user=pdclab-k8-worker2
-
+worker1.k8 ansible_user=pdclab
+worker2.k8 ansible_user=pdclab
+#pdclab-VirtualBox.k8      ansible_user=pdclab
 [all:vars]
 ansible_connection=ssh
-ansible_ssh_private_key_file=~/.ssh/ncu-k8
+ansible_ssh_private_key_file=~/.ssh/id_rsa
